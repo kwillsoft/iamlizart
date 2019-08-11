@@ -1,233 +1,565 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>Single Blog</title>
 
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Title -->
+    <title>Alime - Photography HTML Template</title>
 
-    <!-- FontAwesome CSS -->
-    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- Favicon -->
+    <link rel="icon" href="./img/core-img/favicon.png">
 
-    <!-- Styles -->
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
-<header class="site-header">
-    <div class="site-branding">
-        <h1 class="site-title"><a href="index.html" rel="home"><img src="images/logo.png" alt="Logo"></a></h1>
-    </div><!-- .site-branding -->
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+    <!-- /Preloader -->
 
-    <div class="hamburger-menu">
-        <div class="menu-icon">
-            <img src="images/menu-icon.png" alt="menu icon">
-        </div><!-- .menu-icon -->
+    <!-- Top Search Form Area -->
+    <div class="top-search-area">
+        <div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <!-- Close -->
+                        <button type="button" class="btn close-btn" data-dismiss="modal"><i class="ti-close"></i></button>
+                        <!-- Form -->
+                        <form action="index.html" method="post">
+                            <input type="search" name="top-search-bar" class="form-control" placeholder="Search and hit enter...">
+                            <button type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-        <div class="menu-close-icon">
-            <img src="images/x.png" alt="menu close icon">
-        </div><!-- .menu-close-icon -->
-    </div><!-- .hamburger-menu -->
-</header><!-- .site-header -->
+    <!-- Header Area Start -->
+    <header class="header-area">
+        <!-- Main Header Start -->
+        <div class="main-header-area">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container">
+                    <!-- Classy Menu -->
+                    <nav class="classy-navbar justify-content-between" id="alimeNav">
 
-<nav class="site-navigation flex flex-column justify-content-between">
-    <div class="site-branding d-none d-lg-block ">
-        <h1 class="site-title"><a href="index.html" rel="home"><img src="images/logo2.png" alt="Logo"></a></h1>
-    </div><!-- .site-branding -->
+                        <!-- Logo -->
+                        <a class="nav-brand" href="./index.html"><img src="./img/core-img/logo.png" alt=""></a>
 
-    <ul class="main-menu flex flex-column justify-content-center">
-        <li class="current-menu-item"><a href="index.html">Home</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-    </ul>
+                        <!-- Navbar Toggler -->
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
 
-    <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-</p>
+                        <!-- Menu -->
+                        <div class="classy-menu">
+                            <!-- Menu Close Button -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+                            <!-- Nav Start -->
+                            <div class="classynav">
+                                <ul id="nav">
+                                    <li><a href="./index.html">Home</a></li>
+                                    <li><a href="#">Pages</a>
+                                        <ul class="dropdown">
+                                            <li><a href="./index.html">- Home</a></li>
+                                            <li><a href="./about.html">- About</a></li>
+                                            <li><a href="./gallery.html">- Gallery</a></li>
+                                            <li><a href="./blog.html">- Blog</a></li>
+                                            <li><a href="./single-blog.html">- Blog Details</a></li>
+                                            <li><a href="./contact.html">- Contact</a></li>
+                                            <li><a href="#">- Dropdown</a>
+                                                <ul class="dropdown">
+                                                    <li><a href="#">- Dropdown Item</a></li>
+                                                    <li><a href="#">- Dropdown Item</a></li>
+                                                    <li><a href="#">- Dropdown Item</a></li>
+                                                    <li><a href="#">- Dropdown Item</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="./about.html">About</a></li>
+                                    <li><a href="./gallery.html">Gallery</a></li>
+                                    <li class="active"><a href="./blog.html">Blog</a></li>
+                                    <li><a href="./contact.html">Contact</a></li>
+                                </ul>
 
+                                <!-- Search Icon -->
+                                <div class="search-icon" data-toggle="modal" data-target="#searchModal"><i class="ti-search"></i></div>
+                            </div>
+                            <!-- Nav End -->
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header Area End -->
 
-    <div class="social-profiles">
-        <ul class="flex justify-content-start justify-content-lg-center align-items-center">
-            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-        </ul>
-    </div><!-- .social-profiles -->
-</nav><!-- .site-navigation -->
+    <!-- Breadcrumb Area Start -->
+    <section class="breadcrumb-area blog bg-img bg-overlay jarallax" style="background-image: url(img/bg-img/18.jpg);">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12">
+                    <div class="breadcrumb-content text-center">
+                        <a href="#" class="btn post-catagory">Nature</a>
+                        <h2 class="page-title">Sunset over Cantal, France</h2>
+                        <div class="post-meta">
+                            <a href="#" class="post-author">By Jared Padilla</a>
+                            <a href="#" class="post-date">July 15, 2019</a>
+                            <a href="#" class="post-comments">No Comments</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Breadcrumb Area End -->
 
-<div class="nav-bar-sep d-lg-none"></div>
+    <!-- Blog Details Area Start -->
+    <div class="alime--blog-area section-padding-80">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-10">
+                    <!-- Blog Details Text -->
+                    <div class="blog-details-text">
+                        <p>In recent years people have realized the importance of proper diet and exercise, and recent surveys show that over the last 20 years people are eating better and working out more often, resulting in people living longer, but people are still lacking in their understanding that their mental well being is just as important as their physical health.</p>
 
-<div class="outer-container">
-    <div class="single-post">
+                        <p>Today most people get on average 4 to 6 hours of exercise every day, and make sure that everything they put in their mouths is not filled with sugars or preservatives, but they pay no attention to their mental health, no vacations, not even the occasional long weekend, 60 hour weeks, taking work home with them and even working weekends. All of this for hopes of one day getting that big promotion. What good will it do you when your brain overloads and you have a breakdown in the office.</p>
+
+                        <div class="my-5">
+                            <div class="row">
+                                <div class="col-12 col-lg-8">
+                                    <div class="row">
+                                        <div class="col-12 col-sm-6">
+                                            <img class="mb-10" src="img/bg-img/60.jpg" alt="">
+                                        </div>
+                                        <div class="col-12 col-sm-6">
+                                            <img class="mb-10" src="img/bg-img/61.jpg" alt="">
+                                        </div>
+                                        <div class="col-12">
+                                            <img class="mb-10" src="img/bg-img/63.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-4">
+                                    <img class="mb-10" src="img/bg-img/62.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <p>In the end your physical health will suffer no matter how well you eat and how often you exercise. You will wind up with high blood pressure, stress and tension all of which raises the chances of you having a stroke or heart attack.</p>
+
+                        <p>In hopes of helping you avoid this I am providing you with the things I do to keep my mental health in tip top condition.</p>
+
+                        <p>My absolute favorite thing to do to refocus myself is to go for a long ride on my Harley. Nothing brings the world back into focus like riding free like the wind, there is no better forms of therapy as far as I am concerned.</p>
+
+                        <!-- Blockquote -->
+                        <blockquote class="alime-blockquote">
+                            <h4>Thank you for shooting Jared's Bar Mitzvah. Our experience working with you was fantastic and the pictures you captured are outstanding and really captured the magic of the day.</h4>
+                            <h6>- Ron &amp; Nina B</h6>
+                        </blockquote>
+
+                        <p>I also enjoy watching an hour or 2 of television every night, some light sitcoms are a great way to lighten your minds load, and laughing out loud for 30 seconds every day is a great way to release stress.</p>
+
+                        <p>Video games are also great for stress release, if you are mad at your boss what better way to get it out of you then boxing, just imagine you are pounding on your boss and hope you don’t lose. I hope you try some of these methods or think of some of your own to help keep the stress down in your life and keep your mental health in as good of condition as the rest of you.</p>
+                    </div>
+
+                    <!-- Post Author Area -->
+                    <div class="post-author-area mt-50 d-flex align-items-center justify-content-between">
+                        <ul class="popular-tags">
+                            <li><a class="btn badges-btn" href="#">CAMERA</a></li>
+                            <li><a class="btn badges-btn" href="#">PHOTOGRAHY</a></li>
+                            <li><a class="btn badges-btn" href="#">TIPS</a></li>
+                        </ul>
+
+                        <!-- Share Info -->
+                        <div class="post-social-info d-flex align-items-center">
+                            <p>Share:</p>
+                            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Blog Details Area End -->
+
+    <!-- Pager Area Start -->
+    <div class="alime-pager-area section-padding-0-80">
+        <div class="container">
+            <div class="row no-gutters">
+                <!-- Previous -->
+                <div class="col-6">
+                    <div class="previous bg-img" style="background-image: url(img/bg-img/5.jpg);">
+                        <div class="overlay-content d-flex align-items-center justify-content-center">
+                            <a href="#" class="post-title">The Female Body Shape Men Find Most Attractive</a>
+                            <a href="#" class="previous-link"><i class="arrow_left"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Next -->
+                <div class="col-6">
+                    <div class="next bg-img" style="background-image: url(img/bg-img/49.jpg);">
+                        <div class="overlay-content d-flex align-items-center justify-content-center">
+                            <a href="#" class="post-title">Vietnam's largest art community</a>
+                            <a href="#" class="next-link"><i class="arrow_right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Pager Area End -->
+
+    <!-- Related News Area Start -->
+    <div class="related-news-area">
         <div class="container">
             <div class="row">
-                <div class="col">
-                    <ul class="breadcrumbs flex align-items-center">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li>Single</li>
-                    </ul><!-- .breadcrumbs -->
-                </div><!-- .col -->
-            </div><!-- .row -->
+                <div class="col-12">
+                    <div class="section-heading">
+                        <h2>Recommended For You</h2>
+                    </div>
+                </div>
+            </div>
 
             <div class="row">
-                <div class="col-12">
-                    <div class="featured-img">
-                        <figure>
-                            <img src="images/single-blog.jpg" alt="blog">
-                        </figure>
-                    </div><!-- .content-area -->
-                </div><!-- .col -->
-
-                <div class="col-12 col-lg-8">
-                    <div class="content-area">
-                        <header class="entry-header">
+                <!-- Single Blog Area -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-post-area">
+                        <!-- Post Thumbnail -->
+                        <a href="#" class="post-thumbnail"><img src="img/bg-img/52.jpg" alt=""></a>
+                        <!-- Post Catagory -->
+                        <a href="#" class="btn post-catagory">Camera</a>
+                        <!-- Post Conetent -->
+                        <div class="post-content">
                             <div class="post-meta">
-                                <a href="#">Portfolio</a>
-                            </div><!-- .meta-post -->
+                                <a href="#">May 19, 2019</a>
+                                <a href="#">3 Comment</a>
+                            </div>
+                            <a href="#" class="post-title">The Female Body Shape Men Find</a>
+                        </div>
+                    </div>
+                </div>
 
-                            <h1>Open Portfolio Items With Custom Links in Portfolio Grid in New Tab</h1>
+                <!-- Single Blog Area -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-post-area">
+                        <!-- Post Thumbnail -->
+                        <a href="#" class="post-thumbnail"><img src="img/bg-img/53.jpg" alt=""></a>
+                        <!-- Post Catagory -->
+                        <a href="#" class="btn post-catagory">Country</a>
+                        <!-- Post Conetent -->
+                        <div class="post-content">
+                            <div class="post-meta">
+                                <a href="#">May 19, 2019</a>
+                                <a href="#">3 Comment</a>
+                            </div>
+                            <a href="#" class="post-title">Vietnam's largest art community</a>
+                        </div>
+                    </div>
+                </div>
 
-                            <span class="byline">by <span class="author"><a href="#">Phil Martinez</a></span></span>
-                        </header><!-- .entry-header -->
+                <!-- Single Blog Area -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-post-area">
+                        <!-- Post Thumbnail -->
+                        <a href="#" class="post-thumbnail"><img src="img/bg-img/54.jpg" alt=""></a>
+                        <!-- Post Catagory -->
+                        <a href="#" class="btn post-catagory">Camera</a>
+                        <!-- Post Conetent -->
+                        <div class="post-content">
+                            <div class="post-meta">
+                                <a href="#">May 19, 2019</a>
+                                <a href="#">3 Comment</a>
+                            </div>
+                            <a href="#" class="post-title">Photo awards of the year</a>
+                        </div>
+                    </div>
+                </div>
 
-                        <div class="entry-content">
-                            <p>Get the latest fashion tips and outfit ideas from your favorite celebrities and designers. Click through runway and front row photos from fashion week shows in New York, London, Paris, and Milan. Plus: browse key accessories like bags, shoes, and sunglasses, must-have denim </p>
+                <!-- Single Blog Area -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-post-area">
+                        <!-- Post Thumbnail -->
+                        <a href="#" class="post-thumbnail"><img src="img/bg-img/55.jpg" alt=""></a>
+                        <!-- Post Catagory -->
+                        <a href="#" class="btn post-catagory">Tips</a>
+                        <!-- Post Conetent -->
+                        <div class="post-content">
+                            <div class="post-meta">
+                                <a href="#">May 19, 2019</a>
+                                <a href="#">3 Comment</a>
+                            </div>
+                            <a href="#" class="post-title">The Female Body Shape Men Find</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-                            <p>Liusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, qui s nostrud exercitation ullamLorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+            <div class="border-top mt-5"></div>
+        </div>
+    </div>
+    <!-- Related News Area End -->
 
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                        </div><!-- .entry-content -->
-                    </div><!-- .content-area -->
-                </div><!-- .col-12 -->
+    <!-- Comment Area Start -->
+    <div class="comment-area section-padding-80">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-9">
+                    <!-- Comments Area -->
+                    <div class="comment_area clearfix">
+                        <h4 class="mb-30">02 Comments</h4>
 
-                <aside class="col-12 col-lg-3 offset-lg-1">
-                    <div class="entry-meta">
-                        <div class="posted-date">
-                            <label>Date</label>
+                        <ol>
+                            <!-- Single Comment Area -->
+                            <li class="single_comment_area">
+                                <!-- Comment Content -->
+                                <div class="comment-content d-flex">
+                                    <!-- Comment Author -->
+                                    <div class="comment-author">
+                                        <img src="img/bg-img/32.jpg" alt="author">
+                                    </div>
+                                    <!-- Comment Meta -->
+                                    <div class="comment-meta">
+                                        <a href="#" class="post-date">27 Aug 2019</a>
+                                        <h5>Brandon Kelley</h5>
+                                        <p>Neque porro qui squam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora.</p>
+                                        <a href="#" class="like">Like</a>
+                                        <a href="#" class="reply">Reply</a>
+                                    </div>
+                                </div>
 
-                            <span class="date-format"><a href="#">December 20, 2018</a></span>
-                        </div><!-- .posted-date -->
-
-                        <div class="post-category">
-                            <label>Category</label>
-                            <span><a href="#">Photography</a></span>
-                        </div><!-- .post-category -->
-
-                        <div class="posted-tags">
-                            <label>tags</label>
-                            <span><a href="#">Photography</a>, <a href="#">nature</a>, <a href="#">hat</a> </span>
-                        </div><!-- .entry-meta -->
-
-                        <div class="post-share">
-                            <label>share</label>
-                            <ul>
-                                <li class="fb"><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li class="gp"><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                                <li class="in"><a href="#"><i class="fa fa-instagram"></i></a></li>
-                                <li class="tw"><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            </ul>
-                        </div><!-- .post-share -->
-                    </div><!-- .entry-meta -->
-                </aside><!-- .col-md-3 -->
-
-                <div class="col-12 col-lg-7">
-                    <div class="content-area">
-                        <div class="post-comments">
-                            <h3 class="comments-title"><span class="comments-number">02 Comments</span></h3>
-
-                            <ol class="comment-list">
-                                <li class="comment">
-                                    <article class="comment-body">
-                                        <figure class="comment-author-avatar">
-                                            <img src="images/sofia-joelsson.jpg" alt="Sofia">
-                                        </figure><!-- .comment-author-avatar -->
-
-                                        <div class="comment-wrap">
+                                <ol class="children">
+                                    <li class="single_comment_area">
+                                        <!-- Comment Content -->
+                                        <div class="comment-content d-flex">
+                                            <!-- Comment Author -->
                                             <div class="comment-author">
-                                                <span class="fn">
-                                                    <a href="#">Sofia Joelsson,</a>
-                                                </span><!-- .fn -->
+                                                <img src="img/bg-img/33.jpg" alt="author">
+                                            </div>
+                                            <!-- Comment Meta -->
+                                            <div class="comment-meta">
+                                                <a href="#" class="post-date">27 Aug 2018</a>
+                                                <h5>Mia Maya</h5>
+                                                <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetu adipisci velit, sed quia non numquam eius modi</p>
+                                                <a href="#" class="like">Like</a>
+                                                <a href="#" class="reply">Reply</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ol>
+                            </li>
 
-                                                <span class="comment-meta">
-                                                    <a href="#">Dec 018 2018</a>
-                                                </span><!-- .comment-meta -->
-                                            </div><!-- .comment-author -->
+                            <!-- Single Comment Area -->
+                            <li class="single_comment_area">
+                                <!-- Comment Content -->
+                                <div class="comment-content d-flex">
+                                    <!-- Comment Author -->
+                                    <div class="comment-author">
+                                        <img src="img/bg-img/34.jpg" alt="author">
+                                    </div>
+                                    <!-- Comment Meta -->
+                                    <div class="comment-meta">
+                                        <a href="#" class="post-date">27 Aug 2018</a>
+                                        <h5>Mike Phillips</h5>
+                                        <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetu adipisci velit, sed quia non numquam eius modi</p>
+                                        <a href="#" class="like">Like</a>
+                                        <a href="#" class="reply">Reply</a>
+                                    </div>
+                                </div>
+                                
+                                <ol class="children">
+                                    <li class="single_comment_area">
+                                        <!-- Comment Content -->
+                                        <div class="comment-content d-flex">
+                                            <!-- Comment Author -->
+                                            <div class="comment-author">
+                                                <img src="img/bg-img/33.jpg" alt="author">
+                                            </div>
+                                            <!-- Comment Meta -->
+                                            <div class="comment-meta">
+                                                <a href="#" class="post-date">27 Aug 2018</a>
+                                                <h5>Mia Maya</h5>
+                                                <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetu adipisci velit, sed quia non numquam eius modi</p>
+                                                <a href="#" class="like">Like</a>
+                                                <a href="#" class="reply">Reply</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </div>
 
-                                            <p>Neque porro qui squam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora.</p>
+                    <!-- Leave A Reply -->
+                    <div class="alime-contact-form mt-50">
+                        <h4 class="mb-30">Leave A Comment</h4>
 
-                                            <div class="reply">
-                                                <a href="#">like</a>
-                                                <a href="#">reply</a>
-                                            </div><!-- .reply -->
-                                        </div><!-- .comment-wrap -->
+                        <!-- Form -->
+                        <form action="#" method="post">
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    <input type="text" name="message-name" class="form-control mb-30" placeholder="Your Name">
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <input type="email" name="message-email" class="form-control mb-30" placeholder="Email">
+                                </div>
+                                <div class="col-12">
+                                    <input type="text" name="website" class="form-control mb-30" placeholder="Websites">
+                                </div>
+                                <div class="col-12">
+                                    <textarea name="message" class="form-control mb-30" placeholder="Messages"></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn alime-btn btn-2 mt-15">Send Messages</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
 
-                                        <div class="clearfix"></div>
-                                    </article><!-- .comment-body -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Comment Area End -->
 
-                                    <ol class="children">
-                                        <li class="comment">
-                                            <article class="comment-body">
-                                                <figure class="comment-author-avatar">
-                                                    <img src="images/dave-dubois.jpg" alt="Dave">
-                                                </figure><!-- .comment-author-avatar -->
+    <!-- Follow Area Start -->
+    <div class="follow-area clearfix">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-heading text-center">
+                        <h2>Follow Instagram</h2>
+                        <p>@Alime_photographer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-                                                <div class="comment-wrap">
-                                                    <div class="comment-author">
-                                                        <span class="fn">
-                                                            <a href="#">Dave Dubois,</a>
-                                                        </span><!-- .fn -->
+        <!-- Instagram Feed Area -->
+        <div class="instragram-feed-area owl-carousel">
+            <!-- Single Instagram Item -->
+            <div class="single-instagram-item">
+                <img src="img/bg-img/11.jpg" alt="">
+                <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
+                    <a href="#">
+                        <i class="ti-instagram" aria-hidden="true"></i>
+                        <span>Alime_photographer</span>
+                    </a>
+                </div>
+            </div>
+            <!-- Single Instagram Item -->
+            <div class="single-instagram-item">
+                <img src="img/bg-img/12.jpg" alt="">
+                <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
+                    <a href="#">
+                        <i class="ti-instagram" aria-hidden="true"></i>
+                        <span>Alime_photographer</span>
+                    </a>
+                </div>
+            </div>
+            <!-- Single Instagram Item -->
+            <div class="single-instagram-item">
+                <img src="img/bg-img/13.jpg" alt="">
+                <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
+                    <a href="#">
+                        <i class="ti-instagram" aria-hidden="true"></i>
+                        <span>Alime_photographer</span>
+                    </a>
+                </div>
+            </div>
+            <!-- Single Instagram Item -->
+            <div class="single-instagram-item">
+                <img src="img/bg-img/14.jpg" alt="">
+                <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
+                    <a href="#">
+                        <i class="ti-instagram" aria-hidden="true"></i>
+                        <span>Alime_photographer</span>
+                    </a>
+                </div>
+            </div>
+            <!-- Single Instagram Item -->
+            <div class="single-instagram-item">
+                <img src="img/bg-img/15.jpg" alt="">
+                <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
+                    <a href="#">
+                        <i class="ti-instagram" aria-hidden="true"></i>
+                        <span>Alime_photographer</span>
+                    </a>
+                </div>
+            </div>
+            <!-- Single Instagram Item -->
+            <div class="single-instagram-item">
+                <img src="img/bg-img/16.jpg" alt="">
+                <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
+                    <a href="#">
+                        <i class="ti-instagram" aria-hidden="true"></i>
+                        <span>Alime_photographer</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Follow Area End -->
 
-                                                        <span class="comment-meta">
-                                                            <a href="#">Aug 11, 2018</a>
-                                                        </span><!-- .comment-meta -->
-                                                    </div><!-- .comment-author -->
+    <!-- Footer Area Start -->
+    <footer class="footer-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="footer-content d-flex align-items-center justify-content-between">
+                        <!-- Copywrite Text -->
+                        <div class="copywrite-text">
+                            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                        </div>
+                        <!-- Footer Logo -->
+                        <div class="footer-logo">
+                            <a href="#"><img src="img/core-img/logo2.png" alt=""></a>
+                        </div>
+                        <!-- Social Info -->
+                        <div class="social-info">
+                            <a href="#"><i class="ti-facebook" aria-hidden="true"></i></a>
+                            <a href="#"><i class="ti-twitter-alt" aria-hidden="true"></i></a>
+                            <a href="#"><i class="ti-linkedin" aria-hidden="true"></i></a>
+                            <a href="#"><i class="ti-pinterest" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Area End -->
 
-                                                    <p>Neque porro qui squam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</p>
-
-                                                    <div class="reply">
-                                                        <a href="#">like</a>
-                                                        <a href="#">reply</a>
-                                                    </div><!-- .reply -->
-                                                </div><!-- .comment-wrap -->
-
-                                                <div class="clearfix"></div>
-                                            </article><!-- .comment-body -->
-                                        </li><!-- .comment -->
-                                    </ol><!-- .children -->
-                                </li><!-- .comment -->
-                            </ol><!-- .comment-list -->
-                        </div><!-- .post-comments -->
-
-                        <div class="comments-form">
-                            <div class="comment-respond">
-                                <h3 class="comment-reply-title">Leave a comment</h3>
-
-                                <form class="comment-form">
-                                    <input type="text" placeholder="Name">
-                                    <input type="email" placeholder="Email">
-                                    <input type="url" placeholder="Website">
-                                    <textarea rows="4" placeholder="Messages"></textarea>
-                                    <input type="submit" value="send message">
-                                </form><!-- .comment-form -->
-                            </div><!-- .comment-respond -->
-                        </div><!-- .comments-form -->
-                    </div><!-- .content-area -->
-                </div><!-- .col-12 -->
-            </div><!-- .row -->
-        </div><!-- .container -->
-    </div><!-- .single-post -->
-</div><!-- .outer-container -->
-
-<script type='text/javascript' src='js/jquery.js'></script>
-<script type='text/javascript' src='js/custom.js'></script>
+    <!-- **** All JS Files ***** -->
+    <!-- jQuery 2.2.4 -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Popper -->
+    <script src="js/popper.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- All Plugins -->
+    <script src="js/alime.bundle.js"></script>
+    <!-- Active -->
+    <script src="js/default-assets/active.js"></script>
 
 </body>
+
 </html>
