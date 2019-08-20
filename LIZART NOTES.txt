@@ -1,0 +1,49 @@
+todo  LIZART
+
+*change header logo                     ---done
+* finish bio                            ----done
+
+
+*change gallery *see text
+
+doodles    custom    murals   prints     ---done 
+-------     ------    ----     ------
+
+
+
+*remove print blurb,                  -----done
+*have it pop up only for 'prints'           --done
+* in gallery add "custom blurb" also     ---done
+------------------------------------------------------------------------------------------------------
+* add december card   ---done
+* reorganize the gallery
+* add favicon    --done
+---------------------------------------------------------------
+extra:          tinker with logo?
+
+
+           doodles=human
+tree 
+worm 
+flowers
+ cards
+ inch by inch
+ months
+
+
+              custom=nature
+hot tuna
+ fish bday
+ rose bday
+ shelf 
+lamp
+
+             murals=country
+reefs
+tree face
+
+               prints=video
+months
+
+
+

@@ -6,12 +6,15 @@
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
     <!-- Title -->
     <title>LIZART</title>
 
     <!-- Favicon -->
-    <link rel="icon" href="./img/core-img/favicon.png">
+    <link rel="icon" href="favicon.ico">
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
@@ -54,10 +57,8 @@
                 <div class="container">
                     <!-- Classy Menu -->
                     <nav class="classy-navbar justify-content-between" id="alimeNav">
-
-                        <a class="nav-brand" href="./index.html"> <span style="font-family: 'Poiret One', cursive;
-                            color:mistyrose ; font-size: 72px;" >LIZART</span></a>
-
+                            <a class="nav-brand" href="./index.html"> <img src="img/bg-img/lizlogo2.png" ></a>
+                        
                         <!-- Navbar Toggler -->
                         <div class="classy-navbar-toggler">
                             <span class="navbarToggler"><span></span><span></span><span></span></span>
@@ -72,11 +73,11 @@
                             <!-- Nav Start -->
                             <div class="classynav">
                                 <ul id="nav">
-                                    <li><a href="./index.html">Home</a></li>
+                                    <li><a href="./index.html">HOME</a></li>
                                     
-                                    <li><a href="./about.html">About</a></li>
-                                    <li class="active"><a href="./gallery.html">Gallery</a></li>
-                                    <li><a href="./contact.html">Contact</a></li>
+                                    <li><a href="./about.html">ABOUT</a></li>
+                                    <li class="active"><a href="./gallery.html">GALLERY</a></li>
+                                    <li><a href="./contact.html">CONTACT</a></li>
                                 </ul>
 
                                 <!-- Search Icon -->
@@ -117,24 +118,25 @@
             <div class="row">
                 <div class="col-12">
                     <!-- Projects Menu -->
-                    <div>All art-work is available in high quality prints. Originals available at various gallery showings & events. Contact us for details. Thank you!
-                    </div>
-                    <div class="alime-projects-menu wow fadeInUp" data-wow-delay="100ms">
+                    
+                    <div class="alime-projects-menu wow fadeInUp" data-wow-delay="10ms">
                         <div class="portfolio-menu text-center">
-                            <button class="btn active" data-filter="*">All</button>
-                            <button class="btn" data-filter=".human">Prints</button>
-                            <button class="btn" data-filter=".nature">12 Months Series <span style="color: red";>new</span></button>
-                            <button class="btn" data-filter=".country">Custom Work</button>
-                            <button class="btn" data-filter=".video">Sculpure</button>
+                            <button class="btn active" data-filter="*" onclick="myFunction3()">All</button>
+                            <button class="btn" data-filter=".human" onclick="myFunction3()">Doodles</button>
+                            <button class="btn" data-filter=".nature" onclick="myFunction2()">Custom</button>
+                            <button class="btn" data-filter=".country" onclick="myFunction3()">Murals </button>
+                            <button class="btn" data-filter=".video" onclick="myFunction()">Prints</button>
 
                         </div>
                     </div>
                 </div>
             </div>
-
+            <div id="myDIV" style="display: none"><b>High quality prints available at various gallery showings & events. Contact me for details. Thank you!</b></div>
+            <div id="myDIV2" style="display: none"><b>Contact me about a one of a kind birthday card or repurposed object.</b></div>
+            <br>
             <div class="row alime-portfolio">
                 <!-- Single Gallery Item -->
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item human mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item human mb-30 wow fadeInUp" data-wow-delay="10ms">
                     <div class="single-portfolio-content">
                         <img src="img/bg-img/gal1.jpg" alt="">
                         <div class="hover-content">
@@ -144,7 +146,7 @@
                 </div>
 
                 <!-- Single Gallery Item -->
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item  human mb-30 wow fadeInUp" data-wow-delay="300ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item  human mb-30 wow fadeInUp" data-wow-delay="30ms">
                     <div class="single-portfolio-content">
                         <img src="img/bg-img/gal2.jpg" alt="">
                         <div class="hover-content">
@@ -154,7 +156,7 @@
                 </div>
 
                 <!-- Single Gallery Item -->
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item human mb-30 wow fadeInUp" data-wow-delay="500ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item human mb-30 wow fadeInUp" data-wow-delay="50ms">
                     <div class="single-portfolio-content">
                         <img src="img/bg-img/gal3.jpg" alt="">
                         <div class="hover-content">
@@ -164,7 +166,7 @@
                 </div>
 
                 <!-- Single Gallery Item -->
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item human mb-30 wow fadeInUp" data-wow-delay="700ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item human mb-30 wow fadeInUp" data-wow-delay="70ms">
                     <div class="single-portfolio-content">
                         <img src="img/bg-img/gal4.jpg" alt="">
                         <div class="hover-content">
@@ -174,7 +176,7 @@
                 </div>
 
                 <!-- Single Gallery Item -->
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item human mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item human mb-30 wow fadeInUp" data-wow-delay="10ms">
                     <div class="single-portfolio-content">
                         <img src="img/bg-img/gal5.jpg" alt="">
                         <div class="hover-content">
@@ -184,7 +186,7 @@
                 </div>
 
                 <!-- Single Gallery Item -->
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item human  mb-30 wow fadeInUp" data-wow-delay="300ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item human  mb-30 wow fadeInUp" data-wow-delay="30ms">
                     <div class="single-portfolio-content">
                         <img src="img/bg-img/gal6.jpg" alt="">
                         <div class="hover-content">
@@ -194,7 +196,7 @@
                 </div>
 
                 <!-- Single Gallery Item -->
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item human mb-30 wow fadeInUp" data-wow-delay="500ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item nature mb-30 wow fadeInUp" data-wow-delay="50ms">
                     <div class="single-portfolio-content">
                         <img src="img/bg-img/gal7.jpg" alt="">
                         <div class="hover-content">
@@ -204,7 +206,7 @@
                 </div>
 
                 <!-- Single Gallery Item -->
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item human nature mb-30 wow fadeInUp" data-wow-delay="700ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item human video mb-30 wow fadeInUp" data-wow-delay="70ms">
                     <div class="single-portfolio-content">
                         <img src="img/bg-img/gal8.jpg" alt="">
                         <div class="hover-content">
@@ -214,7 +216,7 @@
                 </div>
 
                 <!-- Single Gallery Item -->
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item human nature mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item human video mb-30 wow fadeInUp" data-wow-delay="10ms">
                     <div class="single-portfolio-content">
                         <img src="img/bg-img/gal9.jpg" alt="">
                         <div class="hover-content">
@@ -224,7 +226,7 @@
                 </div>
 
                 <!-- Single Gallery Item -->
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item  human nature mb-30 wow fadeInUp" data-wow-delay="300ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item human video mb-30 wow fadeInUp" data-wow-delay="30ms">
                     <div class="single-portfolio-content">
                         <img src="img/bg-img/gal10.jpg" alt="">
                         <div class="hover-content">
@@ -234,7 +236,7 @@
                 </div>
 
                 <!-- Single Gallery Item -->
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item  human nature mb-30 wow fadeInUp" data-wow-delay="500ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item human  video mb-30 wow fadeInUp" data-wow-delay="50ms">
                     <div class="single-portfolio-content">
                         <img src="img/bg-img/gal11.jpg" alt="">
                         <div class="hover-content">
@@ -244,17 +246,7 @@
                 </div>
 
                 <!-- Single Gallery Item -->
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item  human nature mb-30 wow fadeInUp" data-wow-delay="700ms">
-                    <div class="single-portfolio-content">
-                        <img src="img/bg-img/gal12.jpg" alt="">
-                        <div class="hover-content">
-                            <a href="img/bg-img/gal12.jpg" class="portfolio-img">+</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Gallery Item -->
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item human  nature mb-30 wow fadeInUp" data-wow-delay="300ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item human video mb-30 wow fadeInUp" data-wow-delay="70ms">
                     <div class="single-portfolio-content">
                         <img src="img/bg-img/gal13.jpg" alt="">
                         <div class="hover-content">
@@ -264,17 +256,7 @@
                 </div>
 
                 <!-- Single Gallery Item -->
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item  human nature mb-30 wow fadeInUp" data-wow-delay="500ms">
-                    <div class="single-portfolio-content">
-                        <img src="img/bg-img/gal14.jpg" alt="">
-                        <div class="hover-content">
-                            <a href="img/bg-img/gal14.jpg" class="portfolio-img">+</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Gallery Item -->
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item human nature mb-30 wow fadeInUp" data-wow-delay="700ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item human video mb-30 wow fadeInUp" data-wow-delay="30ms">
                     <div class="single-portfolio-content">
                         <img src="img/bg-img/gal15.jpg" alt="">
                         <div class="hover-content">
@@ -284,7 +266,27 @@
                 </div>
 
                 <!-- Single Gallery Item -->
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item human nature   mb-30 wow fadeInUp" data-wow-delay="300ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item human video mb-30 wow fadeInUp" data-wow-delay="50ms">
+                    <div class="single-portfolio-content">
+                        <img src="img/bg-img/gal12.jpg" alt="">
+                        <div class="hover-content">
+                            <a href="img/bg-img/gal12.jpg" class="portfolio-img">+</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Gallery Item -->
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item human video mb-30 wow fadeInUp" data-wow-delay="70ms">
+                    <div class="single-portfolio-content">
+                        <img src="img/bg-img/gal14.jpg" alt="">
+                        <div class="hover-content">
+                            <a href="img/bg-img/gal14.jpg" class="portfolio-img">+</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Gallery Item -->
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item human video   mb-30 wow fadeInUp" data-wow-delay="30ms">
                     <div class="single-portfolio-content">
                         <img src="img/bg-img/gal16.jpg" alt="">
                         <div class="hover-content">
@@ -294,7 +296,7 @@
                 </div>
 
                 <!-- Single Gallery Item -->
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item human nature mb-30 wow fadeInUp" data-wow-delay="500ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item human video mb-30 wow fadeInUp" data-wow-delay="50ms">
                     <div class="single-portfolio-content">
                         <img src="img/bg-img/gal17.jpg" alt="">
                         <div class="hover-content">
@@ -304,17 +306,28 @@
                 </div>
 
                 <!-- Single Gallery Item -->
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item human nature mb-30 wow fadeInUp" data-wow-delay="700ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item human video mb-30 wow fadeInUp" data-wow-delay="70ms">
                     <div class="single-portfolio-content">
-                        <img src="img/bg-img/gal18.jpg" alt="">
+                        <img src="img/bg-img/liz12.png" width="300" alt="">
                         <div class="hover-content">
-                            <a href="img/bg-img/gal18.jpg" class="portfolio-img">+</a>
+                            <a href="img/bg-img/liz12.png" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
 
+                     <!-- Single Gallery Item -->
+                     <div class="col-12 col-sm-6 col-lg-3 single_gallery_item human video mb-30 wow fadeInUp" data-wow-delay="70ms">
+                        <div class="single-portfolio-content">
+                            <img src="img/bg-img/gal18.jpg"  alt="">
+                            <div class="hover-content">
+                                <a href="img/bg-img/gal18.jpg" class="portfolio-img">+</a>
+                            </div>
+                        </div>
+                    </div>
+    
+
                 <!-- Single Gallery Item -->
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item human country mb-30 wow fadeInUp" data-wow-delay="300ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item nature  mb-30 wow fadeInUp" data-wow-delay="30ms">
                     <div class="single-portfolio-content">
                         <img src="img/bg-img/gal19.jpg" alt="">
                         <div class="hover-content">
@@ -324,7 +337,7 @@
                 </div>
 
                 <!-- Single Gallery Item -->
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item human country mb-30 wow fadeInUp" data-wow-delay="500ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item  nature mb-30 wow fadeInUp" data-wow-delay="50ms">
                     <div class="single-portfolio-content">
                         <img src="img/bg-img/gal20.jpg" alt="">
                         <div class="hover-content">
@@ -334,7 +347,7 @@
                 </div>
 
                 <!-- Single Gallery Item -->
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item country mb-30 wow fadeInUp" data-wow-delay="700ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item nature mb-30 wow fadeInUp" data-wow-delay="70ms">
                     <div class="single-portfolio-content">
                         <img src="img/bg-img/gal21.jpg" alt="">
                         <div class="hover-content">
@@ -344,7 +357,7 @@
                 </div>
 
                 <!-- Single Gallery Item -->
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item country mb-30 wow fadeInUp" data-wow-delay="300ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item country mb-30 wow fadeInUp" data-wow-delay="30ms">
                     <div class="single-portfolio-content">
                         <img src="img/bg-img/gal22.jpg" alt="">
                         <div class="hover-content">
@@ -354,7 +367,7 @@
                 </div>
 
                 <!-- Single Gallery Item -->
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item country mb-30 wow fadeInUp" data-wow-delay="500ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item country mb-30 wow fadeInUp" data-wow-delay="50ms">
                     <div class="single-portfolio-content">
                         <img src="img/bg-img/gal23.jpg" alt="">
                         <div class="hover-content">
@@ -364,7 +377,7 @@
                 </div>
 
                 <!-- Single Gallery Item -->
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item countrye mb-30 wow fadeInUp" data-wow-delay="700ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item country mb-30 wow fadeInUp" data-wow-delay="70ms">
                     <div class="single-portfolio-content">
                         <img src="img/bg-img/gal24.jpg" alt="">
                         <div class="hover-content">
@@ -375,7 +388,7 @@
 
 
                 <!-- Single Gallery Item -->
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item country mb-30 wow fadeInUp" data-wow-delay="300ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item country mb-30 wow fadeInUp" data-wow-delay="30ms">
                     <div class="single-portfolio-content">
                         <img src="img/bg-img/gal25.jpg" alt="">
                         <div class="hover-content">
@@ -385,7 +398,7 @@
                 </div>
 
                 <!-- Single Gallery Item -->
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item country mb-30 wow fadeInUp" data-wow-delay="500ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item country mb-30 wow fadeInUp" data-wow-delay="50ms">
                     <div class="single-portfolio-content">
                         <img src="img/bg-img/gal26.jpg" alt="">
                         <div class="hover-content">
@@ -395,7 +408,7 @@
                 </div>
 
                 <!-- Single Gallery Item -->
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item video mb-30 wow fadeInUp" data-wow-delay="700ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item nature mb-30 wow fadeInUp" data-wow-delay="70ms">
                     <div class="single-portfolio-content">
                         <img src="img/bg-img/gal27.jpg" alt="">
                         <div class="hover-content">
@@ -406,7 +419,7 @@
 
 
                 <!-- Single Gallery Item -->
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item video mb-30 wow fadeInUp" data-wow-delay="300ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item nature mb-30 wow fadeInUp" data-wow-delay="30ms">
                     <div class="single-portfolio-content">
                         <img src="img/bg-img/gal28.jpg" alt="">
                         <div class="hover-content">
@@ -513,7 +526,45 @@
     <script src="js/alime.bundle.js"></script>
     <!-- Active -->
     <script src="js/default-assets/active.js"></script>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myDIV");
+          var z = document.getElementById("myDIV2");
 
+          if (x.style.display === "none") {
+            x.style.display = "block";
+            z.style.display = "none";
+          } 
+        }
+        </script>
+
+         <script>
+            function myFunction2() {
+              var z = document.getElementById("myDIV2");
+              var x = document.getElementById("myDIV");
+
+              if (z.style.display === "none") {
+                z.style.display = "block";
+                x.style.display ="none";
+
+              } 
+            }
+            </script>
+  
+
+
+
+
+            <script>
+                function myFunction3() {
+                  var x = document.getElementById("myDIV");  
+                  var z = document.getElementById("myDIV2");
+                   {
+                    x.style.display = "none";
+                    z.style.display = "none";
+                  } 
+                }
+                </script>
 </body>
 
 </html>
